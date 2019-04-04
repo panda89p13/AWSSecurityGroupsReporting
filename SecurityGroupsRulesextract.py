@@ -62,6 +62,7 @@ def main():
 					report_csv = csv.DictWriter(report,headers)
 					report_csv.writeheader()
 					report_csv.writerows(Rows)
+					report.close()
 
 if  __name__ =='__main__':
 	main()
